@@ -1,0 +1,18 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+    <button class="btn btn-success">Save</button>
+{{ form_end(form) }}
+
+
+{# CAPTCHA SCRIPTS #}
+<script src="https://www.google.com/recaptcha/api.js?render=6LfQcegUAAAAAGay5pu9MVJNdufvyRK0jQpa88Ey"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute("6LfQcegUAAAAAGay5pu9MVJNdufvyRK0jQpa88Ey", {
+        action: "/user_register"
+    }).then(function(token) {
+        document.getElementById('g-recaptcha-response').value = token;
+    })
+})
+</script>

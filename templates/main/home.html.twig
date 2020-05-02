@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if app.user %}
+        <h1 class="text-center mt-5">Hello There</h1>
+    {% else %}
+        <h1 class="text-center mt-5">Please login</h1> 
+    {% endif %}
+
+{% endblock %}

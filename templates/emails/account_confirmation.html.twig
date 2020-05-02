@@ -1,0 +1,4 @@
+<p>Bonjour {{username}}, </p>
+<p>Merci pour votre inscription. Veuillez cliquer sur le lien ci-dessous afin d'activer votre compte ! </p>
+
+<a href="http://127.0.0.1:8000{{ path('confirm_account', {'token': token, 'id': id}) }}">Activer mon compte</a>
