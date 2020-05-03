@@ -2,7 +2,7 @@
 
 ## Installation
 
-1) >git clone https://github.com/VincenzoGuilbert/SymfonyAuth.git
+1) >git clone https://github.com/formation-dwwm/SymfonyAuth.git
 2) >cd SymfonyAuth/
 3) >composer install && npm install
 4) >npm run dev-server
