@@ -23,6 +23,8 @@
     en renseignant son adresse email et son mot de passe puis autoriser les applications moins sécurisées sur sa boite mail:
     https://myaccount.google.com/lesssecureapps.
     
+# "Tuto"
+    
 ## Mise en place de la vérification
 
 1) ajouter les champs : $confirmation_token et $account_activated à son entité  
